@@ -1,0 +1,32 @@
+
+
+.loginContainer{
+  display:flex;
+  justify-content: center;
+  margin:20% 0;
+  background:blue;
+  width:100%;
+}
+
+
+.inputContainer label{
+  color:white;
+}
+
+.formContainer{
+  background-color: aliceblue;
+  padding:3rem
+}
+.formHeader{
+  background:#128494;
+  width:100%;
+}
+@media(max-width:768px){
+.loginSection{
+  width:100%;
+
+}
+.loginContainer{
+  width:100%;
+}
+}

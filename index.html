@@ -8,7 +8,18 @@
   <link rel="stylesheet" href="./styles/firstSection.css">
 
   <title>True User </title>
-  
+
+  <script type="text/javascript">
+
+      function toggle_visibility(id) {
+        var e = document.getElementById(id);
+        if (e.style.display == 'block')
+          e.style.display = 'none';
+        else
+          e.style.display = 'block';
+      }
+
+  </script>
 </head>
 <body>
     <div class="nav content">
@@ -19,23 +30,57 @@
         </div>
       </div>
       <div class="nav-btn">
-        <label for="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
+        <!-- <label for="nav-check"> -->
+        <button class="loginbtn" onclick="toggle_visibility('sidediv');">Join us</button>
+        <!-- </label> -->
       </div>
     
       <div class="nav-links">
         <a href="/">developers</a>
-<a><button class="loginbtn">Login</button></a>
+<button class="loginbtn" onclick="toggle_visibility('sidediv');">Join us</button>
         
       </div>
     </div>
+     <div class="sideDiv" id="sidediv" style="text-align:left">
+       <div class="sideLogo">
+          <img src="./images/logo.svg" alt="logo"/>
+       </div> 
+      <p>
+        <b style="color:#128494">trueuser</b> exists to unify authentication and
+        validation<br /> of a users for applications. Our
+        first goal is to make<br /> sure we
+        bring a seamless experience to KYC (know<br /> your
+        customer),
+      </p>
+      <p>Send email to get notifications about <b style="color:#128494">trueuser</b> </p>
+       <div class="sideForm">
+          <form>
+          <input placeholder="Email" type="text" />
+          <button>Send</button>
+        </form>
+       </div>
+
+       <p>Follow us</p>
+
+        <div class="socialicons">
+          <div class="twitter">
+            <img src="./images/twitter.svg" />
+          </div>
+          <div class="instagram">
+            <img src="./images/instagram.svg" />
+          </div>
+          <div class="facebook">
+            <img src="./images/facebook.svg" />
+          </div>
+        </div>
+       
+    </div>
+
     <section class=" content firstSection">
+     
       <div class="firstText">
         <p>
-          trueuser exists to unify authentication and 
+          <b>trueuser</b> exists to unify authentication and 
           validation<br/> of a users for applications. Our 
           first goal is to make<br/> sure we
           bring a seamless experience to KYC (know<br/> your
@@ -65,6 +110,8 @@
       <div class="copyright">
         <span style="color:#0FDBA8">copyright 2020. All rights reserved</span>
       </div>
+     
     </section>
+    
 </body>
 </html>

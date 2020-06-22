@@ -1,0 +1,86 @@
+
+/* muli-regular - latin */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/muli-v20-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/muli-v20-latin-regular.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/muli-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/muli-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/muli-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/muli-v20-latin-regular.svg') format('svg'); /* Legacy iOS */
+}
+/* muli-Bold - latin */
+@font-face {
+  font-family: 'Muli Bold';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/muli-v20-latin-900.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/muli-v20-latin-900.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/muli-v20-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/muli-v20-latin-900.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/muli-v20-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/muli-v20-latin-900.svg') format('svg'); /* Legacy iOS */
+}
+
+
+
+body {
+  margin: 0;
+  font-family: 'Muli';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #128494;
+  background-image: url(../images/logo-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 20rem;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+  scroll-behavior:smooth;
+}
+
+a, botton {
+  text-decoration: none;
+  color: unset;
+  outline: none;
+  appearance: none;
+}
+
+a:active, a::focus, a:hover {
+  color: unset;
+}
+
+input {
+  border: none;
+  background-color: unset;
+  outline: none;
+  appearance: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width:1200px){
+  .content{
+  margin:0 10%;
+}
+
+}
+@media (max-width:768px){
+  body{
+     background-image: url(../images/logo-bg-mobile.svg);
+  }
+
+}
+

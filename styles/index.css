@@ -26,8 +26,6 @@
        url('../fonts/muli-v20-latin-900.svg') format('svg'); /* Legacy iOS */
 }
 
-
-
 body {
   margin: 0;
   font-family: 'Muli';
@@ -56,7 +54,6 @@ a:active, a::focus, a:hover {
 }
 
 input {
-  border: none;
   background-color: unset;
   outline: none;
   appearance: none;
